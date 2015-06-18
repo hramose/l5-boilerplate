@@ -4,10 +4,10 @@ Provides a simple `/backend` page with login and simple user management to add o
 
 ### Setup
 
-1. `composer install`
-2. `npm install`
-3. `gulp`
-4. Create `.env` file in the root dir and add the following:
+- `composer install`
+- `npm install`
+- `gulp`
+- Create `.env` file in the root dir and add the following:
 
 ```
   APP_ENV=local
@@ -33,11 +33,11 @@ Provides a simple `/backend` page with login and simple user management to add o
   MAIL_ENCRYPTION=null
 ```
 
-4. Edit the DB credentials and prefered admin credentials as needed.
-5. Create a new application key by running `php artisan key:generate`
-5. `php artisan migrate`
-6. `php artisan serve`
-7. Enjoy!
+- Edit the DB credentials and prefered admin credentials as needed.
+- Create a new application key by running `php artisan key:generate`
+- `php artisan migrate`
+- `php artisan serve`
+- Enjoy!
 
 ### License
 
