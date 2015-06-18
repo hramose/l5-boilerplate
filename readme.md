@@ -7,7 +7,34 @@ Provides a simple `/backend` page with login and simple user management to add o
 1. `composer install`
 2. `npm install`
 3. `gulp`
-4. Set default user/pass in your environment variables (.env): `ADMIN_NAME` and `ADMIN_PASS`
+4. Create `.env` file in the root dir and add the following:
+
+```
+  APP_ENV=local
+  APP_DEBUG=true
+  APP_KEY=anyRandomKey
+  ADMIN_USER=admin
+  ADMIN_PASS=admin
+  
+  DB_HOST=localhost
+  DB_DATABASE=example
+  DB_USERNAME=root
+  DB_PASSWORD=
+  
+  CACHE_DRIVER=file
+  SESSION_DRIVER=file
+  QUEUE_DRIVER=sync
+  
+  MAIL_DRIVER=smtp
+  MAIL_HOST=mailtrap.io
+  MAIL_PORT=2525
+  MAIL_USERNAME=null
+  MAIL_PASSWORD=null
+  MAIL_ENCRYPTION=null
+```
+
+4. Edit the DB credentials and prefered admin credentials as needed.
+5. Create a new application key by running `php artisan key:generate`
 5. `php artisan migrate`
 6. `php artisan serve`
 7. Enjoy!
