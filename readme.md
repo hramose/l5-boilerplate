@@ -7,7 +7,7 @@ Provides a simple `/backend` page with login and simple user management to add o
 - `composer install`
 - `npm install`
 - `gulp`
-- Create `.env` file in the root dir and add the following:
+- Create an `.env` file in the root dir and add the following:
 
 ```
   APP_ENV=local
